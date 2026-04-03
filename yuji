@@ -1,4 +1,4 @@
-local seconds = 2
+local seconds = 8
 task.delay(seconds, function()
 local ogID = "111593784328268"
 game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
