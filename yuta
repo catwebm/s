@@ -1,4 +1,4 @@
-local seconds = 8
+local seconds = 10
 task.delay(seconds, function()
 
 game.Players.LocalPlayer.CharacterAdded:Connect(function()
