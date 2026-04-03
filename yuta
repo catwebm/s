@@ -1,3 +1,6 @@
+local seconds = 8
+task.delay(seconds, function()
+
 game.Players.LocalPlayer.CharacterAdded:Connect(function()
 task.wait(2)
 local ogID = "84442064935420"
@@ -36,8 +39,6 @@ newtrack:Stop()
 end) 
 end)
 
-local seconds = 8
-task.delay(seconds, function()
 local ogID = "84442064935420"
 game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
     if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
@@ -89,5 +90,6 @@ newtrack:Stop()
 
     end
 end) 
+end)
 end)
 print("test")
